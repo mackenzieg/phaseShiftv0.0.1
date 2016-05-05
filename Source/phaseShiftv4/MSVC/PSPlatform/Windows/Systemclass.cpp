@@ -26,13 +26,6 @@ bool Systemclass::Initialize()
 	__int16 screenWidth, screenHeight;
 	bool result;
 
-#ifdef _DEBUG
-	AllocConsole();
-	freopen("CONIN$", "r", stdin);
-	freopen("CONOUT$", "w", stdout);
-	freopen("CONOUT$", "w", stderr);
-#endif
-
 	m_OpenGL = new OpenGLClass();
 	if (!m_OpenGL)
 	{
@@ -162,19 +155,19 @@ LRESULT Systemclass::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam, LPARAM 
 	switch (umsg)
 	{
 	case WM_KEYDOWN:
-		{
-			m_Input->KeyDown(static_cast<unsigned int>(wparam));
-			return 0;
-		}
+	{
+		m_Input->KeyDown(static_cast<unsigned int>(wparam));
+		return 0;
+	}
 	case WM_KEYUP:
-		{
-			m_Input->KeyUp(static_cast<unsigned int>(wparam));
-			return 0;
-		}
+	{
+		m_Input->KeyUp(static_cast<unsigned int>(wparam));
+		return 0;
+	}
 	default:
-		{
-			return DefWindowProc(hwnd, umsg, wparam, lparam);
-		}
+	{
+		return DefWindowProc(hwnd, umsg, wparam, lparam);
+	}
 	}
 }
 
@@ -226,7 +219,7 @@ bool Systemclass::InitializeWindows(OpenGLClass* OpenGL, __int16& screenWidth, _
 	screenHeight = GetSystemMetrics(SM_CYSCREEN);
 
 	if (FULL_SCREEN)
-	// ReSharper disable CppUnreachableCode
+		// ReSharper disable CppUnreachableCode
 	{
 		memset(&dmScreenSettings, 0, sizeof(dmScreenSettings));
 		dmScreenSettings.dmSize = sizeof(dmScreenSettings);
@@ -275,7 +268,7 @@ void Systemclass::ShutdownWindows()
 	ShowCursor(true);
 
 	if (FULL_SCREEN)
-	// ReSharper disable CppUnreachableCode
+		// ReSharper disable CppUnreachableCode
 	{
 		ChangeDisplaySettings(nullptr, 0);
 	}
@@ -295,14 +288,13 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT umessage, WPARAM wparam, LPARAM lparam)
 	switch (umessage)
 	{
 	case WM_CLOSE:
-		{
-			PostQuitMessage(0);
-			return 0;
-		}
+	{
+		PostQuitMessage(0);
+		return 0;
+	}
 	default:
-		{
-			return ApplicationHandle->MessageHandler(hwnd, umessage, wparam, lparam);
-		}
+	{
+		return ApplicationHandle->MessageHandler(hwnd, umessage, wparam, lparam);
+	}
 	}
 }
-

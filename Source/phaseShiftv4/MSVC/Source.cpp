@@ -1,4 +1,5 @@
 #include "PSPlatform/Windows/Systemclass.h"
+#include "PSMath/PSMath.h"
 
 int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_ HINSTANCE hPrevInstance, _In_ LPSTR lpCmdLine, _In_ int nCmdShow)
 {
@@ -10,7 +11,17 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_ HINSTANCE hPrevInstance, _In_ 
 	_CrtSetReportFile(_CRT_ERROR, _CRTDBG_FILE_STDERR);
 	_CrtSetReportMode(_CRT_WARN, _CRTDBG_MODE_FILE);
 	_CrtSetReportFile(_CRT_WARN, _CRTDBG_FILE_STDERR);
+
+	AllocConsole();
+	freopen("CONIN$", "r", stdin);
+	freopen("CONOUT$", "w", stdout);
+	freopen("CONOUT$", "w", stderr);
 #endif
+
+	std::cout << std::powf(2.0, 3.0) << std::endl;
+	std::cout << PSMath::fastPow(2.0, 3.0) << std::endl;
+
+#if 0
 	std::unique_ptr<Systemclass> System(new Systemclass());
 	bool result = false;
 
@@ -21,6 +32,7 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_ HINSTANCE hPrevInstance, _In_ 
 	}
 
 	System->Shutdown();
+#endif
 
 #ifdef _DEBUG
 	system("PAUSE");
