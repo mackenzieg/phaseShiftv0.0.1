@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>{0f26d0a6-941a-4c38-8e3b-0b6dcaf1c0f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Docs">
+      <UniqueIdentifier>{b826632c-a7aa-43f8-880e-7bdf1731de56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Lib">
+      <UniqueIdentifier>{4e5550af-770d-4378-ad2e-3de9f6b73ca0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{6525666c-96e6-4a57-9734-508faedbc4a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PSMath">
+      <UniqueIdentifier>{6c55d2c8-7e46-40a4-b649-734f229aee1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PSPlatform">
+      <UniqueIdentifier>{643ec7f8-e05f-49f3-9b63-92c23cd54b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game\PSPlatform\Windows">
+      <UniqueIdentifier>{27b2141e-b759-4847-9102-ce2f9176c5a8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="PSPlatform\Windows\GraphicClass.cpp">
+      <Filter>Game\PSPlatform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="PSPlatform\Windows\InputClass.cpp">
+      <Filter>Game\PSPlatform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="PSPlatform\Windows\OpenGLClass.cpp">
+      <Filter>Game\PSPlatform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="PSPlatform\Windows\Systemclass.cpp">
+      <Filter>Game\PSPlatform\Windows</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PSMath\PSDouble.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSMath\PSDouble_Util.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSMath\PSFloat.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSMath\PSFloat_Util.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSMath\PSMath.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSMath\PSMath_s.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSMath\PSVector2f.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSMath\PSVector2f_s.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSMath\PSVector3f.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSMath\PSVector4f.h">
+      <Filter>Game\PSMath</Filter>
+    </ClInclude>
+    <ClInclude Include="PSPlatform\Windows\GraphicClass.h">
+      <Filter>Game\PSPlatform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="PSPlatform\Windows\InputClass.h">
+      <Filter>Game\PSPlatform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="PSPlatform\Windows\OpenGLClass.h">
+      <Filter>Game\PSPlatform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="PSPlatform\Windows\Systemclass.h">
+      <Filter>Game\PSPlatform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\wglext.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\GL.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\glcorearb.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\glext.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Lib\glxew.h">
+      <Filter>Lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\Assets\Stone_Tile_Rough.tga">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
