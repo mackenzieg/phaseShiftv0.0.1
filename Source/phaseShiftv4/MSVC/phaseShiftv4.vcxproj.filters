@@ -22,6 +22,9 @@
     <Filter Include="Game\PSPlatform\Windows">
       <UniqueIdentifier>{27b2141e-b759-4847-9102-ce2f9176c5a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Game\PSGraphics">
+      <UniqueIdentifier>{89c45a01-bc2b-40d5-b8fb-ea4d178c89c7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp">
@@ -38,6 +41,9 @@
     </ClCompile>
     <ClCompile Include="PSPlatform\Windows\Systemclass.cpp">
       <Filter>Game\PSPlatform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="PSGraphics\Shader.cpp">
+      <Filter>Game\PSGraphics</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -97,6 +103,9 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Lib\glxew.h">
       <Filter>Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="PSGraphics\Shader.h">
+      <Filter>Game\PSGraphics</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

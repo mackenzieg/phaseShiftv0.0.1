@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="PSGraphics\Shader.cpp" />
     <ClCompile Include="PSPlatform\Windows\GraphicClass.cpp" />
     <ClCompile Include="PSPlatform\Windows\InputClass.cpp" />
     <ClCompile Include="PSPlatform\Windows\OpenGLClass.cpp" />
@@ -31,6 +32,7 @@
     <ClInclude Include="..\..\..\Lib\glext.h" />
     <ClInclude Include="..\..\..\Lib\glxew.h" />
     <ClInclude Include="..\..\..\Lib\wglext.h" />
+    <ClInclude Include="PSGraphics\Shader.h" />
     <ClInclude Include="PSMath\PSDouble.h" />
     <ClInclude Include="PSMath\PSDouble_Util.h" />
     <ClInclude Include="PSMath\PSFloat.h" />
