@@ -45,6 +45,9 @@
     <ClCompile Include="PSGraphics\Shader.cpp">
       <Filter>Game\PSGraphics</Filter>
     </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Game\PSGraphics</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PSMath\PSDouble.h">
@@ -105,6 +108,9 @@
       <Filter>Lib</Filter>
     </ClInclude>
     <ClInclude Include="PSGraphics\Shader.h">
+      <Filter>Game\PSGraphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
       <Filter>Game\PSGraphics</Filter>
     </ClInclude>
   </ItemGroup>

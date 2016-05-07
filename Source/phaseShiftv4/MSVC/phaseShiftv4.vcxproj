@@ -25,6 +25,7 @@
     <ClCompile Include="PSPlatform\Windows\OpenGLClass.cpp" />
     <ClCompile Include="PSPlatform\Windows\Systemclass.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Lib\GL.h" />
@@ -47,6 +48,7 @@
     <ClInclude Include="PSPlatform\Windows\InputClass.h" />
     <ClInclude Include="PSPlatform\Windows\OpenGLClass.h" />
     <ClInclude Include="PSPlatform\Windows\Systemclass.h" />
+    <ClInclude Include="Texture.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Assets\Stone_Tile_Rough.tga" />
