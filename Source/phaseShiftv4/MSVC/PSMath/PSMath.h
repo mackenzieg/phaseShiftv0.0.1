@@ -77,6 +77,27 @@ namespace PSMath
 		return u.d;
 	}
 
+	inline double fastPrecisePow(double a, const double b) {
+		int exp = static_cast<int>(b);
+		union {
+			double d;
+			int x[2];
+		} u = { a };
+		u.x[1] = static_cast<int>((b - exp) * (u.x[1] - 1072632447) + 1072632447);
+		u.x[0] = 0;
+
+		double r = 1.0;
+		while (exp) {
+			if (exp & 1) {
+				r *= a;
+			}
+			a *= a;
+			exp >>= 1;
+		}
+
+		return r * u.d;
+	}
+
 	template <class T>
 	inline T toRad(T a)
 	{

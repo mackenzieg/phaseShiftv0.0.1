@@ -18,8 +18,9 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_ HINSTANCE hPrevInstance, _In_ 
 	freopen("CONOUT$", "w", stderr);
 #endif
 
-	std::cout << std::powf(2.0, 3.0) << std::endl;
-	std::cout << PSMath::fastPow(2.0, 3.0) << std::endl;
+	std::cout << std::powf(2.0, 10.0) << std::endl;
+	std::cout << PSMath::fastPow(2.0, 10.0) << std::endl;
+	std::cout << PSMath::fastPrecisePow(2.0, 10.0) << std::endl;
 
 #if 0
 	std::unique_ptr<Systemclass> System(new Systemclass());
@@ -35,7 +36,9 @@ int WINAPI WinMain(_In_ HINSTANCE hInstance, _In_ HINSTANCE hPrevInstance, _In_ 
 #endif
 
 #ifdef _DEBUG
+#ifdef _WIN64
 	system("PAUSE");
+#endif
 #endif
 	return 0;
 }
