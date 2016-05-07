@@ -13,6 +13,7 @@ private:
 		unsigned char BPP;
 		unsigned char Data2;
 	};
+
 public:
 	Texture();
 	Texture(const Texture&);
