@@ -20,12 +20,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="PSGraphics\Shader.cpp" />
+    <ClCompile Include="PSGraphics\Texture.cpp" />
     <ClCompile Include="PSPlatform\Windows\GraphicClass.cpp" />
     <ClCompile Include="PSPlatform\Windows\InputClass.cpp" />
     <ClCompile Include="PSPlatform\Windows\OpenGLClass.cpp" />
     <ClCompile Include="PSPlatform\Windows\Systemclass.cpp" />
     <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\Lib\GL.h" />
@@ -34,6 +34,7 @@
     <ClInclude Include="..\..\..\Lib\glxew.h" />
     <ClInclude Include="..\..\..\Lib\wglext.h" />
     <ClInclude Include="PSGraphics\Shader.h" />
+    <ClInclude Include="PSGraphics\Texture.h" />
     <ClInclude Include="PSMath\PSDouble.h" />
     <ClInclude Include="PSMath\PSDouble_Util.h" />
     <ClInclude Include="PSMath\PSFloat.h" />
@@ -48,7 +49,6 @@
     <ClInclude Include="PSPlatform\Windows\InputClass.h" />
     <ClInclude Include="PSPlatform\Windows\OpenGLClass.h" />
     <ClInclude Include="PSPlatform\Windows\Systemclass.h" />
-    <ClInclude Include="Texture.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\..\..\Assets\Stone_Tile_Rough.tga" />

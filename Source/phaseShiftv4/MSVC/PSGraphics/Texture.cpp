@@ -5,7 +5,7 @@ Texture::Texture() : m_textureID(0)
 	loaded = false;
 }
 
-Texture::Texture(const Texture&) : m_textureID(0)
+Texture::Texture(const Texture& ext) : m_textureID(ext.m_textureID), loaded(ext.loaded)
 {
 }
 

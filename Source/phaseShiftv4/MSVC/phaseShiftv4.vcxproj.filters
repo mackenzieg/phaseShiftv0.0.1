@@ -45,7 +45,7 @@
     <ClCompile Include="PSGraphics\Shader.cpp">
       <Filter>Game\PSGraphics</Filter>
     </ClCompile>
-    <ClCompile Include="Texture.cpp">
+    <ClCompile Include="PSGraphics\Texture.cpp">
       <Filter>Game\PSGraphics</Filter>
     </ClCompile>
   </ItemGroup>
@@ -110,7 +110,7 @@
     <ClInclude Include="PSGraphics\Shader.h">
       <Filter>Game\PSGraphics</Filter>
     </ClInclude>
-    <ClInclude Include="Texture.h">
+    <ClInclude Include="PSGraphics\Texture.h">
       <Filter>Game\PSGraphics</Filter>
     </ClInclude>
   </ItemGroup>

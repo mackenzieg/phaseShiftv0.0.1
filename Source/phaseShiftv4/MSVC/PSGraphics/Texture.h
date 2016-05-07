@@ -1,6 +1,6 @@
 #pragma once
 
-#include "PSPlatform/Windows/OpenGLClass.h"
+#include "../PSPlatform/Windows/OpenGLClass.h"
 
 class Texture
 {
