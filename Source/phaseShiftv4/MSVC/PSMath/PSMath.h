@@ -67,8 +67,10 @@ namespace PSMath
 		return y;
 	}
 
-	inline double fastPow(double a, double b) {
-		union {
+	inline double fastPow(double a, double b)
+	{
+		union
+		{
 			double d;
 			int x[2];
 		} u = { a };
@@ -77,9 +79,11 @@ namespace PSMath
 		return u.d;
 	}
 
-	inline double fastPrecisePow(double a, const double b) {
+	inline double fastPrecisePow(double a, const double b)
+	{
 		int exp = static_cast<int>(b);
-		union {
+		union
+		{
 			double d;
 			int x[2];
 		} u = { a };
@@ -87,8 +91,10 @@ namespace PSMath
 		u.x[0] = 0;
 
 		double r = 1.0;
-		while (exp) {
-			if (exp & 1) {
+		while (exp)
+		{
+			if (exp & 1)
+			{
 				r *= a;
 			}
 			a *= a;
