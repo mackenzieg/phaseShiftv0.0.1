@@ -14,14 +14,15 @@ Shader::~Shader()
 
 void Shader::CreateShader(OpenGLClass* OpenGL, char* vertFile, char* fragFile)
 {
-	const char* vertShaderBuffer = nullptr;
-	const char* fragShaderBuffer = nullptr;
+	const char* vertShaderBuffer;
+	const char* fragShaderBuffer;
 	GLint status = 0;
 
 	vertShaderBuffer = filetobuf(vertFile);
 	fragShaderBuffer = filetobuf(fragFile);
 
-	GLint vertShader = 0, fragShader = 0;
+	GLint vertShader;
+	GLint fragShader;
 	vertShader = OpenGL->glCreateShader(GL_VERTEX_SHADER);
 	fragShader = OpenGL->glCreateShader(GL_FRAGMENT_SHADER);
 
@@ -93,9 +94,9 @@ void Shader::DeleteShader(OpenGLClass* OpenGL) const
 
 char* Shader::filetobuf(char* file)
 {
-	FILE* fptr = nullptr;
-	long length = 0;
-	char* buf = nullptr;
+	FILE* fptr;
+	long length;
+	char* buf;
 
 	fptr = fopen(file, "rb");
 	if (!fptr)
@@ -117,7 +118,7 @@ char* Shader::filetobuf(char* file)
 void Shader::OutputShaderErrorMessage(OpenGLClass* OpenGL, unsigned int shaderID, char* shaderFileName)
 {
 	GLint logSize = 0;
-	char* infoLog = nullptr;
+	char* infoLog;
 
 	OpenGL->glGetShaderiv(shaderID, GL_INFO_LOG_LENGTH, &logSize);
 
@@ -142,7 +143,7 @@ void Shader::OutputShaderErrorMessage(OpenGLClass* OpenGL, unsigned int shaderID
 void Shader::OutputLinkerErrorMessage(OpenGLClass* OpenGL, unsigned int programID)
 {
 	GLint logSize = 0;
-	char* infoLog = nullptr;
+	char* infoLog;
 
 	OpenGL->glGetProgramiv(programID, GL_INFO_LOG_LENGTH, &logSize);
 
